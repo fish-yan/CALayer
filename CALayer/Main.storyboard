@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMx-bT-DH2">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="X0q-28-Lzj"/>
+                                    <constraint firstAttribute="height" constant="300" id="rI4-Id-O5k"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kVO-I1-uEQ" appends="YES" id="A8c-7o-mr2"/>
+                                    <outletCollection property="gestureRecognizers" destination="oQF-BT-chW" appends="YES" id="H5t-d6-Heq"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PMx-bT-DH2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvi-Sc-mTb"/>
+                            <constraint firstItem="PMx-bT-DH2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kge-3L-paV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewForLayer" destination="PMx-bT-DH2" id="zpJ-uK-p4U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kVO-I1-uEQ">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="0Sc-iu-cC8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="oQF-BT-chW">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="Kx7-L2-aXf"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
+        </scene>
+    </scenes>
+</document>
